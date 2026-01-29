@@ -5,6 +5,12 @@ st.set_page_config(page_title="Tabla de Jugadores", page_icon="🎮", layout="ce
 
 st.title("🎮 Tabla de jugadores")
 st.caption("Escribe un valor para un jugador y se acumula. Puedes reiniciar cuando quieras.")
+with st.expander("📊 Ver tabla de puntuaciones (reglas)", expanded=False):
+    st.image(
+        "puntuacion_datos.png",
+        caption="Tabla de puntuaciones",
+        use_container_width=True
+    )
 
 # --- Estado inicial ---
 if "players" not in st.session_state:
